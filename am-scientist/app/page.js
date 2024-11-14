@@ -1,11 +1,13 @@
-import TestLimits from "@/components/TestLimits"
+import CourseFinder from "@/components/CourseFinder";
+import TestLimits from "@/components/TestLimits";
 
 const page = () => {
   return (
     <div>
-      <TestLimits/>
+      <TestLimits />
+      <CourseFinder />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
