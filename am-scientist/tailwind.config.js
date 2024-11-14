@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         "el-messiri": ['"El Messiri"', "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         background: "var(--background)",

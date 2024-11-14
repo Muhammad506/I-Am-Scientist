@@ -1,7 +1,7 @@
-import "@fontsource/el-messiri"; // Default weight 400
-import "@fontsource/el-messiri/400.css"; // Specific weight
-import "@fontsource/poppins"; // Defaults to weight 400
-import "@fontsource/poppins/400.css"; // Specify weight
+import "@fontsource/el-messiri";
+import "@fontsource/poppins";
+import "@fontsource/inter";
+
 
 const TestLimits = () => {
   return (
@@ -21,7 +21,7 @@ const TestLimits = () => {
       <div className="w-6 h-6 md:w-20 md:h-20 rounded-full bg-[#408CFB] absolute bottom-4 right-10 md:bottom-6 md:right-28 2xl:right-40 shadow-xl"></div>
 
       {/* content */}
-      <div className="w-[85.5%] md:w-[66%] -ml-3 justify-center items-center flex flex-col relative z-10">
+      <div className="w-[85.5%] md:w-[66%]  justify-center items-center flex flex-col relative z-10">
         <h1 className="font-el-messiri font-bold text-xl tracking-wide pt-14 md:pt-12 md:text-4xl text-white text-center">
           &quot;Test Your Limits—Sign Up for Remote Competitions and Rise to the
           Top&quot;
