@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 
-const NavBar = () => {
+const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
     setClick(!click);
@@ -13,11 +13,11 @@ const NavBar = () => {
     <>
       {/* Navbar for Large Devices */}
       <div
-        className="lg:flex hidden absolute bg-[#04236E] top-0 justify-between items-center self-center Jmd:px-10 px-7 py-3 w-full z-50 text-white"
+        className="lg:flex hidden absolute bg-[#04236E] top-0 justify-around items-center self-center Jmd:px-10 px-7 py-3 w-full z-50 text-white"
         id="navbar"
       >
         <Image
-          src="/logog.png"
+          src={"/Scientist-Logo-1 1.png"}
           width={140}
           height={0}
           sizes="500px"
@@ -32,7 +32,7 @@ const NavBar = () => {
           <li className="">Courses</li>
           <li className="">Contact</li>
           <li className="rounded-tr-md rounded-bl-md bg-[#C407B9] border h-fit px-4 py-[2px]">
-            <button className="text-lg">Enroll</button>
+            <button>Enroll</button>
           </li>
         </ul>
       </div>
@@ -50,11 +50,7 @@ const NavBar = () => {
 
         {/* Menu */}
         <div
-          className={`${
-            click
-              ? "flex flex-col transform translate-x-0"
-              : "lg:hidden transform translate-x-full "
-          } fixed top-0 lg:hidden inset-0 justify-start items-start h-screen w-screen bg-[#04236E] text-white Jmd:px-10 px-4 py-3 transition-transform duration-700 overflow-y-auto`}
+          className={`${click ? "flex flex-col transform translate-x-0" : "lg:hidden transform translate-x-full "} fixed top-0 lg:hidden inset-0 justify-start items-start h-screen w-screen bg-[#04236E] text-white Jmd:px-10 px-4 py-3 transition-transform duration-700 overflow-y-auto`}
         >
           <Image
             src={"/Scientist-Logo-1 1.png"}
@@ -86,4 +82,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

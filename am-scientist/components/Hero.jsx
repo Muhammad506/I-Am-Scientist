@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
           <h1
             className="relative xl:text-5xl lg:text-4xl lg:mt-20 mt-10 text-3xl bg-[#FF00EA] p-2 px-4 rounded-tl-2xl rounded-br-2xl uppercase w-fit"
-            style={{ fontFamily: "Sparky Stones" }}
+            style={{ fontFamily: "SparkyStones" }}
           >
             Intelligence
           </h1>
@@ -59,7 +59,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/*right Image Section */}
+      {/* Image Section */}
       <div className="relative hidden Jmd:flex Jmd:w-[50%] xl:w-[35%] pt-10 justify-center items-center ">
         <Image
           className=""

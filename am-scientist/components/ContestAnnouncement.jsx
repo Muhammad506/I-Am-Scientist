@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 
 const ContestAnnouncement = () => {
   const announcement = [
@@ -62,7 +63,7 @@ const ContestAnnouncement = () => {
       {/* Main Content */}
       <div className="relative z-10 grid gap-7 text-white text-center">
         {/* Title Section */}
-        <div className="space-y-2 xl:mt-7 mt-3">
+        <div className="my-3 h-fit">
           <h4 className="text-sm md:text-lg capitalize">Contest Schedule</h4>
           <h1 className="text-xl md:text-2xl xl:text-3xl capitalize font-semibold">
             The National I am Scientist System
@@ -97,9 +98,7 @@ const ContestAnnouncement = () => {
                 <div className="flex-1 text-left">
                   <span>{ann.sub1}</span>
                   <span
-                    className={`block px-2 py-1 rounded-md text-sm font-medium ${
-                      ann.id == 3 ? "text-[#26014E]" : "text-white"
-                    }`}
+                    className={`block px-2 py-1 rounded-md text-sm font-medium ${ann.id == 3 ? "text-[#26014E]" : "text-white"}`}
                     style={{ backgroundColor: ann.color }}
                   >
                     {ann.date}
@@ -114,9 +113,7 @@ const ContestAnnouncement = () => {
                 <div className="flex-1 text-left">
                   <span>{ann.sub2}</span>
                   <span
-                    className={`block px-2 py-1 rounded-md text-sm font-medium ${
-                      ann.id == 3 ? "text-[#26014E]" : "text-white"
-                    }`}
+                    className={`block px-2 py-1 rounded-md text-sm font-medium ${ann.id == 3 ? "text-[#26014E]" : "text-white"}`}
                     style={{ backgroundColor: ann.color }}
                   >
                     {ann.date}
@@ -131,9 +128,7 @@ const ContestAnnouncement = () => {
                 <div className="flex-1 text-left">
                   <span>{ann.sub3}</span>
                   <span
-                    className={`block px-2 py-1 rounded-md text-sm font-medium ${
-                      ann.id == 3 ? "text-[#26014E]" : "text-white"
-                    }`}
+                    className={`block px-2 py-1 rounded-md text-sm font-medium ${ann.id == 3 ? "text-[#26014E]" : "text-white"}`}
                     style={{ backgroundColor: ann.color }}
                   >
                     {ann.date}

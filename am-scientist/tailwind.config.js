@@ -7,8 +7,37 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'slide-in': 'slide-in 0.7s ease-in-out',
+        'slide-out': 'slide-out 0.7s ease-in-out',
+      },
+      keyframes: {
+        'slide-in': {
+          '0%': {
+            transform: 'translateX(1000px)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: '1',
+          },
+        },
+        'slide-out': {
+          '0%': {
+            transform: 'translateX(0px)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'translateX(1000px)',
+            opacity: '1',
+          },
+        },
+      },
+      screens: {
+        'SmL': '426px',
+        'Jmd': '675px',
+      },
       fontFamily: {
-        "el-messiri": ['"El Messiri"', "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
