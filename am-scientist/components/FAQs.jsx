@@ -1,7 +1,8 @@
-"use client"
+// Component made by Ammad
+
+"use client";
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
-// import "../index.css";
 
 const FAQs = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -20,7 +21,6 @@ const FAQs = () => {
       question: "What subjects do the contests cover?",
       answer:
         "Our contests focus on AI, Machine Learning, Deep Learning, Cybersecurity, and other tech-driven fields.",
-
     },
     {
       question: "How are winners rewarded?",
@@ -34,34 +34,28 @@ const FAQs = () => {
     },
     {
       question: "How can i stay updated on contest dates",
-      answer: "Keep checking our website for announcements, or subscribe to our newsletter for regular updates.",
+      answer:
+        "Keep checking our website for announcements, or subscribe to our newsletter for regular updates.",
     },
   ];
 
   return (
-    <main className=" bg-gradient-to-r from-purple-950 to-blue-900 md:px-16  py-20  ">
-      <div
-        className="xl:px-16 md:px-6 px-0  w-full container faqs"
-        id="faqs"
-      >
+    <main className=" bg-gradient-to-r from-[#1C032F] to-[#0032AB] md:px-16  py-20  ">
+      <div className="xl:px-16 md:px-6 px-0  w-full container faqs" id="faqs">
         <div className="lg:p-4 md:p-2 p-1">
           <h2 className=" flex items-center justify-center   lg:text-3xl text-xl font-bold   transform transition duration-500 hover:scale-105">
             <span className="border-text  text-white ">
               FREQUENTLY ASKED QUESTIONS
             </span>
-
           </h2>
           <hr className="w-24 mx-auto my-4 border-t-4 border-white" />
-
-
-          
         </div>
         <div className="w-full flex items-center justify-center   lg:px-10 md:px-6 px-4 ">
           <div className="flex flex-col items-center   ">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="w-full  bg-gradient-to-r from-purple-950 to-blue-900 border border-white my-2 py-1 overflow-hidden rounded-xl  transform transition duration-500 hover:scale-105   hover:bg-gray-300 shadow-2xl    "
+                className="w-full  bg-gradient-to-r from-[#1C032F] to-[#0032AB] border border-white my-2 py-1 overflow-hidden rounded-xl  transform transition duration-500 hover:scale-105   hover:bg-gray-300 shadow-2xl    "
               >
                 <div
                   className="rounded-sm w-full p-6 py-4 cursor-pointer transition-all duration-300 ease-in-out "
@@ -73,15 +67,9 @@ const FAQs = () => {
                     </span>
                     <div className="text-white flex items-center">
                       {openIndex === index ? (
-                        <FaMinus
-                          className="text-white "
-                          size={20}
-                        />
+                        <FaMinus className="text-white " size={20} />
                       ) : (
-                        <FaPlus
-                          className="text-white "
-                          size={20}
-                        />
+                        <FaPlus className="text-white " size={20} />
                       )}
                     </div>
                   </div>
