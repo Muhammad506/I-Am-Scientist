@@ -1,5 +1,8 @@
+import CompetitionPrizes from "@/components/CompetitionPrizes";
 import CountryPartners from "@/components/CountryPartners";
 import CourseFinder from "@/components/CourseFinder";
+import FAQs from "@/components/FAQs";
+import Footer from "@/components/Footer";
 import TestLimits from "@/components/TestLimits";
 
 const page = () => {
@@ -8,6 +11,9 @@ const page = () => {
       <TestLimits />
       <CourseFinder />
       <CountryPartners />
+      <CompetitionPrizes/>
+      <FAQs/>
+      <Footer/>
     </div>
   );
 };
