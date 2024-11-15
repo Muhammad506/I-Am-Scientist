@@ -1,6 +1,3 @@
-// components/CompetitionPrizes.jsx
-import React from 'react';
-
 const CompetitionPrizes = () => {
   return (
     <section className="bg-gradient-to-r from-purple-950 to-purple-950 text-white py-12 px-4 md:px-16">

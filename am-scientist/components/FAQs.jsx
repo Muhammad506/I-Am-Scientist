@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
-// import "../index.css";
+
 
 const FAQs = () => {
   const [openIndex, setOpenIndex] = useState(null);
